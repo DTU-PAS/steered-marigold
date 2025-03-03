@@ -1,0 +1,81 @@
+#!/bin/bash
+
+python3 -m steeredmarigold.validate_marigold \
+    --pretrained-model-name-or-path "stabilityai/stable-diffusion-2" \
+    --checkpoint "prs-eth/marigold-depth-v1-0" \
+    --checkpoint-subdir "unet" \
+    --output-dir "${MODELS_DIR}/final5/marigold-nyu448x608-mdetodc448x608" \
+    --val-dataset-name "steeredmarigold.dataset.Nyuv2" \
+    --val-preprocessing "steeredmarigold.preprocessing.evaluate_naive_lidar_metric" \
+    --evaluation-function "steeredmarigold.evaluate.mde_to_dc" \
+    --val-dataset-set "test" \
+    --val-data-dir "${DATASETS_DIR}/nyu-v2/" \
+    --denoising-steps 50 \
+    --weight-dtype "fp32" \
+    --center-crop-height 448 \
+    --center-crop-width 608 \
+    --naive-lidar 0.05 \
+    --compute-metrics \
+    --store-raw \
+    --save-visualizations
+
+python3 -m steeredmarigold.validate_marigold \
+    --pretrained-model-name-or-path "stabilityai/stable-diffusion-2" \
+    --checkpoint "prs-eth/marigold-depth-v1-0" \
+    --checkpoint-subdir "unet" \
+    --output-dir "${MODELS_DIR}/final5/marigold-nyu448x608-preserve0.05-missingarea248x408-evalmdetodconlygtcropping448x608" \
+    --val-dataset-name "steeredmarigold.dataset.Nyuv2" \
+    --val-preprocessing "steeredmarigold.preprocessing.naive_lidar_metric_missing_area" \
+    --val-dataset-set "test" \
+    --val-data-dir "${DATASETS_DIR}/nyu-v2/" \
+    --center-crop-height 448 \
+    --center-crop-width 608 \
+    --evaluation-function "steeredmarigold.evaluate.mde_to_dc_only_gt_cropping" \
+    --denoising-steps 50 \
+    --weight-dtype "fp32" \
+    --naive-lidar 0.05 \
+    --compute-metrics \
+    --store-raw \
+    --save-visualizations
+
+python3 -m steeredmarigold.validate_marigold \
+    --pretrained-model-name-or-path "stabilityai/stable-diffusion-2" \
+    --checkpoint "prs-eth/marigold-depth-v1-0" \
+    --checkpoint-subdir "unet" \
+    --output-dir "${MODELS_DIR}/final5/marigold-nyu448x608-preserve0.05-missingarea248x408-evalmdetodconlygtcropping248x408" \
+    --val-dataset-name "steeredmarigold.dataset.Nyuv2" \
+    --val-preprocessing "steeredmarigold.preprocessing.naive_lidar_metric_missing_area" \
+    --val-dataset-set "test" \
+    --val-data-dir "${DATASETS_DIR}/nyu-v2/" \
+    --center-crop-height 448 \
+    --center-crop-width 608 \
+    --eval-center-crop-height 248 \
+    --eval-center-crop-width 408 \
+    --evaluation-function "steeredmarigold.evaluate.mde_to_dc_only_gt_cropping" \
+    --denoising-steps 50 \
+    --weight-dtype "fp32" \
+    --naive-lidar 0.05 \
+    --compute-metrics \
+    --store-raw \
+    --save-visualizations
+
+python3 -m steeredmarigold.validate_marigold \
+    --pretrained-model-name-or-path "stabilityai/stable-diffusion-2" \
+    --checkpoint "prs-eth/marigold-depth-v1-0" \
+    --checkpoint-subdir "unet" \
+    --output-dir "${MODELS_DIR}/final5/marigold-nyu448x608-preserve0.05-missingarea248x408-evalmdetodconlygtcropping198x358" \
+    --val-dataset-name "steeredmarigold.dataset.Nyuv2" \
+    --val-preprocessing "steeredmarigold.preprocessing.naive_lidar_metric_missing_area" \
+    --val-dataset-set "test" \
+    --val-data-dir "${DATASETS_DIR}/nyu-v2/" \
+    --center-crop-height 448 \
+    --center-crop-width 608 \
+    --eval-center-crop-height 198 \
+    --eval-center-crop-width 358 \
+    --evaluation-function "steeredmarigold.evaluate.mde_to_dc_only_gt_cropping" \
+    --denoising-steps 50 \
+    --weight-dtype "fp32" \
+    --naive-lidar 0.05 \
+    --compute-metrics \
+    --store-raw \
+    --save-visualizations

@@ -1,0 +1,9 @@
+pillow
+opencv-python-headless==4.8.1.78
+huggingface-hub==0.25.2
+transformers>=4.25.1
+accelerate>=0.16.0
+matplotlib==3.8.2
+pandas==2.2.0
+h5py==3.10.0
+scipy==1.12.0
