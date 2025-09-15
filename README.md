@@ -1,11 +1,20 @@
 <h1 align="center">SteeredMarigold: Steering Diffusion Towards Depth Completion of Largely Incomplete Depth Maps</h1>
 <p align="center">
-  <a href="https://arxiv.org/pdf/2409.10202">
-    <img src="https://img.shields.io/badge/arXiv-2409.10202-b31b1b.svg" alt="arXiv">
+  <a href="https://steeredmarigold.github.io">
+    <img alt="Homepage" src="https://img.shields.io/badge/Visit-Homepage-blue">
+  </a>
+  <a href="https://ieeexplore.ieee.org/abstract/document/11128449">
+    <img alt="Paper (IEEE)" src="https://img.shields.io/badge/Read-Paper_(IEEE)-green">
+  </a>
+  <a href="https://arxiv.org/abs/2409.10202">
+    <img alt="Paper (arXiv)" src="https://img.shields.io/badge/Read-Paper_(arXiv)-yellow">
+  </a>
+  <a href="https://steeredmarigold.github.io/static/images/poster8_small.pdf">
+    <img alt="ICRA Poster" src="https://img.shields.io/badge/View-ICRA_Poster-red">
   </a>
 </p>
 
-This is an official implementation of "SteeredMarigold: Steering Diffusion Towards Depth Completion of Largely Incomplete Depth Maps" paper, presented at ICRA 2025.
+This is the official implementation of "SteeredMarigold: Steering Diffusion Towards Depth Completion of Largely Incomplete Depth Maps" paper, presented at ICRA 2025.
 
 # ⚙️ Environment
 
@@ -44,14 +53,13 @@ To reproduce the results from the paper, run the following scripts:
 # 📚 Citation
 
 ```bibtex
-@misc{steeredmarigold,
+@INPROCEEDINGS{steered-marigold,
+      author={Gregorek, Jakub and Nalpantidis, Lazaros},
+      booktitle={2025 IEEE International Conference on Robotics and Automation (ICRA)}, 
       title={SteeredMarigold: Steering Diffusion Towards Depth Completion of Largely Incomplete Depth Maps}, 
-      author={Jakub Gregorek and Lazaros Nalpantidis},
-      year={2024},
-      eprint={2409.10202},
-      archivePrefix={arXiv},
-      primaryClass={cs.RO},
-      url={https://arxiv.org/abs/2409.10202}, 
+      year={2025},
+      pages={13304-13311},
+      doi={10.1109/ICRA55743.2025.11128449}
 }
 ```
 
