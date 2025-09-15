@@ -1,17 +1,9 @@
 <h1 align="center">SteeredMarigold: Steering Diffusion Towards Depth Completion of Largely Incomplete Depth Maps</h1>
 <p align="center">
-  <a href="https://steeredmarigold.github.io">
-    <img alt="Homepage" src="https://img.shields.io/badge/Visit-Homepage-blue">
-  </a>
-  <a href="https://ieeexplore.ieee.org/abstract/document/11128449">
-    <img alt="Paper (IEEE)" src="https://img.shields.io/badge/Read-Paper_(IEEE)-green">
-  </a>
-  <a href="https://arxiv.org/abs/2409.10202">
-    <img alt="Paper (arXiv)" src="https://img.shields.io/badge/Read-Paper_(arXiv)-yellow">
-  </a>
-  <a href="https://steeredmarigold.github.io/static/images/poster8_small.pdf">
-    <img alt="ICRA Poster" src="https://img.shields.io/badge/View-ICRA_Poster-red">
-  </a>
+  <a href="https://steeredmarigold.github.io"><img alt="Homepage" src="https://img.shields.io/badge/Visit-Homepage-blue"></a>
+  <a href="https://ieeexplore.ieee.org/abstract/document/11128449"><img alt="Paper (IEEE)" src="https://img.shields.io/badge/Read-Paper_(IEEE)-green"></a>
+  <a href="https://arxiv.org/abs/2409.10202"><img alt="Paper (arXiv)" src="https://img.shields.io/badge/Read-Paper_(arXiv)-yellow"></a>
+  <a href="https://steeredmarigold.github.io/static/images/poster8_small.pdf"><img alt="ICRA Poster" src="https://img.shields.io/badge/View-ICRA_Poster-red"></a>
 </p>
 
 This is the official implementation of "SteeredMarigold: Steering Diffusion Towards Depth Completion of Largely Incomplete Depth Maps" paper, presented at ICRA 2025.
